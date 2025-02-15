@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Vision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="visualizer.html">Sorting Visualizer</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="content">
+        <h1>Sorting Visualizer</h1>
+
+        <input type="text" id="arrayInput" placeholder="Enter numbers (e.g., 10, 20, 5, 7)">
+        <button onclick="generateArray()">Generate Array</button>
+        
+        <div class="controls">
+            <button onclick="bubbleSort()">Bubble Sort</button>
+            <button onclick="selectionSort()">Selection Sort</button>
+            <button onclick="insertionSort()">Insertion Sort</button>
+            <button onclick="mergeSort()">Merge Sort</button>
+            <button onclick="quickSort()">Quick Sort</button>
+        </div>
+
+        <div class="container" id="bars"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2025 Sorting Visualizer. All rights reserved.</p>
+        <p>Contact: dineshwalker143@gmail.com</p>
+        <p>Designed and Developed by J Dinesh Chowdary</p>
+    </footer>
+    <style>
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</body>
+</html>

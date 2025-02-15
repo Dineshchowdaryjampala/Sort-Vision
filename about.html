@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Vision</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="button-container">
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='visualizer.html'">Visualizer</button>
+        </div>
+        <h1>Sorting Algorithms</h1>
+        <p>This page provides an overview of different sorting algorithms, including their examples, and time & space complexity.</p>
+        <div class="algorithm-description">
+            <h3>Bubble Sort</h3>
+            <p>Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The process is repeated until the list is sorted.</p>
+            <pre>Example: [5, 3, 8, 1] → [3, 5, 8, 1] → [3, 5, 1, 8] → [3, 1, 5, 8] → [1, 3, 5, 8]</pre>
+        </div>
+        
+        <div class="algorithm-description">
+            <h3>Selection Sort</h3>
+            <p>Selection Sort repeatedly finds the smallest element in the list and moves it to the correct position. It has a time complexity of O(n²) and is not efficient for large datasets.</p>
+            <pre>Example: [5, 3, 8, 1] → [1, 3, 8, 5] → [1, 3, 5, 8]</pre>
+        </div>
+        
+        <div class="algorithm-description">
+            <h3>Insertion Sort</h3>
+            <p>Insertion Sort builds the sorted list one item at a time. It is efficient for small data sets but inefficient for large ones.</p>
+            <pre>Example: [5, 3, 8, 1] → [3, 5, 8, 1] → [3, 5, 8, 1] → [1, 3, 5, 8]</pre>
+        </div>
+        
+        <div class="algorithm-description">
+            <h3>Merge Sort</h3>
+            <p>Merge Sort follows a divide-and-conquer strategy. It splits the list into smaller parts, sorts them recursively, and then merges them back together.</p>
+            <pre>Example: [5, 3, 8, 1] → ([5, 3], [8, 1]) → ([3, 5], [1, 8]) → [1, 3, 5, 8]</pre>
+        </div>
+        
+        <div class="algorithm-description">
+            <h3>Quick Sort</h3>
+            <p>Quick Sort selects a pivot, partitions the array around it, and recursively sorts the subarrays.</p>
+            <pre>Example: [5, 3, 8, 1] → Pivot: 5 → ([3, 1], [8]) → ([1, 3], [5, 8])</pre>
+        </div>
+        
+        <h2>Time & Space Complexity</h2>
+        <table>
+            <tr>
+                <th>Algorithm</th>
+                <th>Best Case</th>
+                <th>Average Case</th>
+                <th>Worst Case</th>
+                <th>Space Complexity</th>
+            </tr>
+            <tr>
+                <td>Bubble Sort</td>
+                <td>O(n)</td>
+                <td>O(n²)</td>
+                <td>O(n²)</td>
+                <td>O(1)</td>
+            </tr>
+            <tr>
+                <td>Selection Sort</td>
+                <td>O(n²)</td>
+                <td>O(n²)</td>
+                <td>O(n²)</td>
+                <td>O(1)</td>
+            </tr>
+            <tr>
+                <td>Insertion Sort</td>
+                <td>O(n)</td>
+                <td>O(n²)</td>
+                <td>O(n²)</td>
+                <td>O(1)</td>
+            </tr>
+            <tr>
+                <td>Merge Sort</td>
+                <td>O(n log n)</td>
+                <td>O(n log n)</td>
+                <td>O(n log n)</td>
+                <td>O(n)</td>
+            </tr>
+            <tr>
+                <td>Quick Sort</td>
+                <td>O(n log n)</td>
+                <td>O(n log n)</td>
+                <td>O(n²)</td>
+                <td>O(log n)</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sorting Visualizer. All rights reserved.</p>
+        <p>Contact: dineshwalker143@gmail.com</p>
+        <p>Designed and Developed by J Dinesh Chowdary</p>
+    </footer>
+</body>
+</html>
